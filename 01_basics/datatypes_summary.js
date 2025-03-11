@@ -42,3 +42,35 @@ console.log(typeof myFunction); //FUNCTION
 console.log(typeof heros);
 
 // TYPE OF NON-PRIMITIVE DATATYPES IS ALWAYS ==OBJECT==
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Primitive),  Heap(Non-Primitive)
+
+let myYt = "AmrutaPatil"
+
+let anothername = myYt
+anothername = "Ammu"
+console.log(myYt);
+
+console.log(anothername)
+
+//This goes to heap memory ...but it's reference user1 is stored at stack memory
+let user1 = {
+    email : "Ammu@gmail.com",
+    upi : "ammu@ybl"
+}
+
+let usertwo = user1;
+
+usertwo.email = "Amruta@gmail.com"
+
+console.log(user1.email);
+console.log(usertwo.email);
+
+// STACK => creates copy, Original string is not changed
+// HEAP  => Same reference
+
